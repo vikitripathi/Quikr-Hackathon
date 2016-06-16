@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/stackimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cars"
+            android:layout_alignParentTop="true"
+
+
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/refresh2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/stacklinearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_gradient"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/stackimage"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/stackname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name"
+                    android:shadowColor="#eeeeee"
+                    android:shadowRadius="1"
+                    android:textColor="#fff"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/stackmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Money"
+                    android:layout_weight="1"
+                    android:shadowColor="#eeeeee"
+                    android:shadowRadius="1"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/stackdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product date"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:shadowColor="#eeeeee"
+                    android:shadowRadius="1"
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--
+            <EditText
+                android:id="@+id/stacksearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stacklinearlayout1"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:hint="Search"
+                android:gravity="center"
+                android:inputType="text"/>
+
+        -->
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
